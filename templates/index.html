@@ -8,6 +8,36 @@
 <body>
     {% include "templateInheritance.html" %}
     <h3>Here you will choose if you want to see your lists or go to the category page</h3>
+    <br>
+
+
+    {% for l in list  %}
+
+
+    <P> {{l.id}} </P>
+    <P> {{l.name}} </P>
+    <P> {{l.category}} </P>
+
+
+    {% endfor %}
+
+
+
+
+
+<!--    
+    {{ first_name }}
+
+
+    {% if first_name == "roberto" %}
+    <p>welcome</p>
+
+    {% else %}
+    <p>wrong name</p>
+
+    {% endif %}
+-->
+
 
 </body>
 </html>
